@@ -8,7 +8,7 @@
   <title>Progeny</title>
 
   <!-- Bootstrap -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/normalize.css" media="screen" title="no title" charset="utf-8">
   <link rel="stylesheet" href="/css/style.css" media="screen" title="no title" charset="utf-8">
@@ -26,19 +26,32 @@
 
 
     <header>
-          <h1>Yannick B</h1>
-        <nav class="nav-top">
-          <ul>
-            <li><a href="https://demo.audiotheme.com/audiotheme-fourteen/">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">PHOTOS</a></li>
-            <li><a href="#">VIDEO</a></li>
-            <li class="menu-social"><a href=""><i class="fa fa-twitter"></i></a></li>
-            <li class="menu-social"><a href=""><i class="fa fa-facebook"></i></a></li>
-          </ul>
-        <div class="search"><i class="fa fa-search"></i></div>
-        </nav>
-  </header>
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Yannick B</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                      <li><a href="https://demo.audiotheme.com/audiotheme-fourteen/">HOME</a></li>
+                      <li><a href="#">ABOUT</a></li>
+                      <li><a href="#">PHOTOS</a></li>
+                      <li><a href="#">VIDEO</a></li>
+                      <li class="menu-social"><a href=""><i class="fa fa-twitter"></i></a></li>
+                      <li class="menu-social"><a href=""><i class="fa fa-facebook"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <span class="search">
+              <i class="fa fa-search"></i>
+            </span>
+          </nav>
+    </header>
   <main>
     <div id="content-page">
       <section class="pictures-top">
@@ -65,7 +78,7 @@
         </div>
         <div class="pic-bloc empty"></div>
       </section>
-      <section class="text">
+    <section class="text">
         <article class="demo">
           <h2>AudioTheme Framework Demo</h2>
             <p>The<a href="#"> AudioTheme Framework plugin</a> is built to work with any WordPress theme, providing the features needed for a music-oriented website and allowing you to take your content with you anywhere you go — even when switching them</p>
@@ -91,7 +104,11 @@
 
             </div>
             <div class="aside-bloc"></div>
-              <i class="fa-play"></i><h3>upcoming gigs</h3>
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-square fa-stack-2x"></i>
+              <i class="fa fa-play fa-stack-1x fa-inverse"></i>
+            </span>
+              <h3>upcoming gigs</h3>
               <img src="images/audiotheme-overview-video-thumbnail.jpg" alt="">
               <p>Overview showcasing a few of the features available in the AudioTheme Framework via the WordPress admin.</p>
         </aside>
